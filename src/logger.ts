@@ -25,4 +25,4 @@ function init(dateFormat = 'DD.MM.YYYY HH:mm:ss'): { [index: string]: Log } {
     }
 }
 
-export default init
+module.exports = init
