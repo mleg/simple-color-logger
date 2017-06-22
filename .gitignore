@@ -3,4 +3,3 @@ yarn.lock
 /.idea
 *.dev.*
 /dist
-package-lock.json

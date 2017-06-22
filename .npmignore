@@ -7,3 +7,5 @@ yarn.lock
 /src
 .gitignore
 tsconfig.json
+.npmignore
+*.test.js
