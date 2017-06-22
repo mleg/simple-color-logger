@@ -1,11 +1,14 @@
-const moment = require('moment')
-const { red, green, gray, yellow } = require('chalk')
+import * as moment from 'moment'
+import { red, green, gray, yellow } from 'chalk'
 
-function init(dateFormat = 'DD.MM.YYYY HH:mm:ss') {
+type Color = (str: string) => string
+type Log = (...messages: any[]) => void
+
+function init(dateFormat = 'DD.MM.YYYY HH:mm:ss'): { [index: string]: Log } {
     const date = () => moment().format(dateFormat)
 
-    function create(logFn, color) {
-        return (...messages) => {
+    function create(logFn: Log, color?: Color): Log {
+        return (...messages: any[]) => {
             const text = `${date()} ${messages.join(' ')}`
             logFn(color ? color(text) : text)
         }
@@ -22,4 +25,4 @@ function init(dateFormat = 'DD.MM.YYYY HH:mm:ss') {
     }
 }
 
-module.exports = init
+export default init
