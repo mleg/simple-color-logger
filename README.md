@@ -13,9 +13,9 @@ logger.warn('warn')
 ```
 Approximate output:
 <div style="background-color:black;font-family:monospace">
-<span style="color:red">22.06.2017 13:34:18 error</span><br>
-<span style="color:green">22.06.2017 13:34:18 info</strong><br>
-<span style="color:darkgray">22.06.2017 13:34:18 fyi</span><br>
-<span style="color:white">22.06.2017 13:34:18 log</span><br>
-<span style="color:yellow">22.06.2017 13:34:18 warn</span><br>
+<span style="color:red">22.06.2017 13:34:18 error</span> // red<br>
+<span style="color:green">22.06.2017 13:34:18 info</strong> // green<br>
+<span style="color:darkgray">22.06.2017 13:34:18 fyi</span> // gray<br>
+<span style="color:white">22.06.2017 13:34:18 log</span> // no coloring<br>
+<span style="color:yellow">22.06.2017 13:34:18 warn</span> // yellow<br>
 </div>

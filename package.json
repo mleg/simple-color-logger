@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "src/logger.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mleg/simple-color-logger"
+  },
   "scripts": {
     "test": "jest --no-cache"
   },
