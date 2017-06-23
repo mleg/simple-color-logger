@@ -2,6 +2,9 @@ A simple wrapper around `console` logging functions (for Node.js)
 Just **colors** output and prepends it with formatted date.
 
 ## Usage
+```
+$ yarn add simple-color-logger
+```
 ```javascript
 const logger = require('simple-color-logger')('DD.MM.YYYY HH:mm:ss'/*default*/)
 
